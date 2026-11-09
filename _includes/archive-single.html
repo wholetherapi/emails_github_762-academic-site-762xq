@@ -1,0 +1,15 @@
+{% if include.type == "list" %}
+<div class="list__item">
+  <article class="archive__item">
+    <h2 class="archive__item-title">{{ post.title }}</h2>
+    <p class="archive__item-excerpt">{{ post.excerpt }}</p>
+    <p class="archive__item-venue"><i>{{ post.venue }}</i></p>
+    {% if post.paperurl %}
+      <a href="{{ post.paperurl }}" class="btn">Paper</a>
+    {% endif %}
+    {% if post.codeurl %}
+      <a href="{{ post.codeurl }}" class="btn btn--primary">Code</a>
+    {% endif %}
+  </article>
+</div>
+{% endif %}

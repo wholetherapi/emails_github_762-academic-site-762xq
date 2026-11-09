@@ -1,0 +1,17 @@
+title: "Patrick Morales"
+description: "Personal academic homepage"
+baseurl: ""
+url: "https://patrickmorales.example.org"
+markdown: kramdown
+
+collections:
+  publications:
+    output: true
+    permalink: /publication/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: archive
